@@ -6,16 +6,20 @@ PHP class/script to get the last version tag from a GitHub repository
 <ul>
   <li>As a class:</li>
   <br>
-  <code>
-<?php    
+
+```php
+<?php
+
 require 'github-lastversion.php';
+
 try {
-  echo GitHub::getLastRelaseVersion('vrana/adminer');
+
+  echo GitHub::getLastRelaseVersion('vrana/adminer'); // example
+
 } catch (Exception $e) {
-  echo "Error";
+  //TODO
 }    
-?>
-  </code>
+```
   <br>
   <li>As a script:</li>
   <br>
